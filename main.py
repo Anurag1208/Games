@@ -32,19 +32,13 @@ def func(x,y):
             crossingRaod.setUp(sc=sc)
             crossingRaod.gameOn(sc=sc)
 
-while(True):
-    a = input("Do you want to play? (Y/N):")
-    if a=='N' or a=='n':
-        sc.bye()
-        break
-    else:
-        #setting up home page...
-        sc = Screen()
-        homepage = HomePage()
-        pongGame = PongGame()
-        snakeGameWithWalls = SnakeGameWithWalls()
-        snakeGameWithoutWalls = SnakeGameWithoutWalls()
-        crossingRaod = TurtleCrossingRoad()
-        homepage.setUp(sc=sc)
-        sc.onclick(func, add=False)
+sc = Screen()
+homepage = HomePage()
+pongGame = PongGame()
+snakeGameWithWalls = SnakeGameWithWalls()
+snakeGameWithoutWalls = SnakeGameWithoutWalls()
+crossingRaod = TurtleCrossingRoad()
+homepage.setUp(sc=sc)
+sc.onclick(func, add=False)
+a = input("Press Enter to exit...")
         
