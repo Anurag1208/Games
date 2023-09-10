@@ -2,6 +2,7 @@ from turtle import *
 
 SCOREBOARD_COLOR = "white"
 FONT = "Arial"
+SIZE = 30
 ALIGNMENT = "center"
 SCORE_COORDINATES = (0,260)
 
@@ -26,4 +27,4 @@ class ScoreBoard(Turtle):
 
     def game_over(self):
         self.goto(0,0)
-        self.write("GAME OVER",True,align=ALIGNMENT,font=FONT)
+        self.write("GAME OVER",True,align=ALIGNMENT,font=(FONT,SIZE,"normal"))
