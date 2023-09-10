@@ -2,8 +2,8 @@ from turtle import *
 from HomePage.main import *
 from Pong_Game.main import PongGame
 from TurtleCrossingRoad.main import TurtleCrossingRoad
-from SnakeGameWithWalls.main import SnakeGameWithWalls
-from SnakeGameWithoutWalls.main import SnakeGameWithoutWalls
+from SnakeGameWithWalls.mainWithWalls import SnakeGameWithWalls
+from SnakeGameWithWalls.mainWithoutWalls import SnakeGameWithoutWalls
 
 
 # making objects of game...
